@@ -1,11 +1,11 @@
 def bubble_sort(arr)
   (arr.length).times do
     for i in (0..arr.length-1)
-      if arr[i+1] == nil
+      if arr[i+1] == nil       #for when the loop reaches last element
         break
       else
         if arr[i] > arr[i+1]
-          cons = arr[i]
+          cons = arr[i]        
           arr[i] = arr[i+1]
           arr[i+1] = cons
         end
